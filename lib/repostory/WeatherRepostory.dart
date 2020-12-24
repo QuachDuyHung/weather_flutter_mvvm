@@ -1,6 +1,6 @@
 import 'package:weather_flutter_mvvm/model/Weather.dart';
 
-abstract class WeatherRepo {
+abstract class WeatherRepostory {
   Future<Weather> getWeatherByLocation(String location);
 
   Future<List<Weather>> getWeathers();

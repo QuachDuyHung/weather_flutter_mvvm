@@ -13,7 +13,7 @@ class HomeViewModel extends Model {
     return _instance;
   }
 
-  WeatherRepo weatherRepo = WeatherRepoImpl();
+  WeatherRepostory weatherRepo = WeatherRepoImpl();
   List<Weather> weatherFavorite = [];
 
   HomeViewModel() {

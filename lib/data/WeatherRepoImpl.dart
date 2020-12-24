@@ -1,12 +1,13 @@
 import 'package:weather_flutter_mvvm/data/local/WeatherDao.dart';
 import 'package:weather_flutter_mvvm/data/remote/WeatherApi.dart';
 import 'package:weather_flutter_mvvm/model/Weather.dart';
-import 'package:weather_flutter_mvvm/repostory/WeatherRepostory.dart';
+import 'package:weather_flutter_mvvm/repostory/WeatherRepostory.dart'
+    show WeatherRepostory;
 
-class WeatherRepoImpl with WeatherRepo {
-  static WeatherRepo instance;
+class WeatherRepoImpl with WeatherRepostory {
+  static WeatherRepostory instance;
 
-  static WeatherRepo getInstance() {
+  static WeatherRepostory getInstance() {
     if (instance == null) {
       instance = WeatherRepoImpl();
     }

@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart';
 import 'package:weather_flutter_mvvm/model/Weather.dart';
 import 'package:weather_flutter_mvvm/model/WeatherFromApi.dart';
-import 'package:weather_flutter_mvvm/utils/NetworkUtil.dart';
+import 'package:weather_flutter_mvvm/utils/NetworkUtil.dart'
+    show APP_ID, APP_ID_PARAM, BASE_URL, QUERY_PARAM, WEATHER;
 
 class WeatherApi {
   var client = Client();
