@@ -1,4 +1,4 @@
-import 'package:weather_flutter/model/Weather.dart';
+import 'package:weather_flutter_mvvm/model/Weather.dart';
 
 class WeatherFromApi {
   int id;

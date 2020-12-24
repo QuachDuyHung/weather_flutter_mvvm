@@ -1,7 +1,7 @@
 import 'package:scoped_model/scoped_model.dart';
-import 'package:weather_flutter/data/WeatherRepoImpl.dart';
-import 'package:weather_flutter/model/Weather.dart';
-import 'package:weather_flutter/repo/WeatherRepo.dart';
+import 'package:weather_flutter_mvvm/data/WeatherRepoImpl.dart';
+import 'package:weather_flutter_mvvm/model/Weather.dart';
+import 'package:weather_flutter_mvvm/repo/WeatherRepo.dart';
 
 class HomeViewModel extends Model {
   static HomeViewModel _instance;

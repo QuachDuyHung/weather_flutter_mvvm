@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'package:weather_flutter/ui/WeatherItem.dart';
-import 'package:weather_flutter/ui/history/HistoryScreen.dart';
-import 'package:weather_flutter/ui/home/HomeViewModel.dart';
-import 'package:weather_flutter/ui/search/SearchScreen.dart';
-import 'package:weather_flutter/ui/weather/WeatherScreen.dart';
+import 'package:weather_flutter_mvvm/ui/WeatherItem.dart';
+import 'package:weather_flutter_mvvm/ui/history/HistoryScreen.dart';
+import 'package:weather_flutter_mvvm/ui/home/HomeViewModel.dart';
+import 'package:weather_flutter_mvvm/ui/search/SearchScreen.dart';
+import 'package:weather_flutter_mvvm/ui/weather/WeatherScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
