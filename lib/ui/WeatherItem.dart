@@ -59,46 +59,25 @@ class WeatherItem extends StatelessWidget {
             },
             trailing: favoriteWidget(),
             isThreeLine: true,
-            title: Hero(
-              tag: "hero tag ${weather.location}",
-              child: Container(
-                width: 200,
-                child: Material(
-                  color: Colors.transparent,
-                  child: Text(
-                    "${weather.location}",
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ),
-              ),
+            title: Text(
+              "${weather.location}",
+              style: TextStyle(fontSize: 16),
             ),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Hero(
-                  child: Material(
-                    color: Colors.transparent,
-                    child: Text("${weather.main}",
-                        style: TextStyle(
-                          color: Colors.black54,
-                          fontSize: 13,
-                        )),
+                Text("${weather.main}",
+                    style: TextStyle(
+                      color: Colors.black54,
+                      fontSize: 13,
+                    )),
+                Text(
+                  "${weather.temp.toInt() - 273}°C",
+                  style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 13,
                   ),
-                  tag: "hero tag ${weather.location} main",
                 ),
-                Hero(
-                  child: Material(
-                    color: Colors.transparent,
-                    child: Text(
-                      "${weather.temp.toInt()}°C",
-                      style: TextStyle(
-                        color: Colors.black54,
-                        fontSize: 13,
-                      ),
-                    ),
-                  ),
-                  tag: "hero tag ${weather.location} temp",
-                )
               ],
             ),
             leading: Icon(Icons.location_city),
