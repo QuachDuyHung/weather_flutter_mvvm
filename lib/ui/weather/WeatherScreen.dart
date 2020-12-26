@@ -78,33 +78,18 @@ class MState extends State with TickerProviderStateMixin {
           children: <Widget>[
             Container(
               margin: EdgeInsets.fromLTRB(36, 36, 0, 24),
-              child: Hero(
-                tag: "hero tag ${weather.location}",
-                child: Container(
-                  width: 200,
-                  child: Material(
-                    color: Colors.transparent,
-                    child: Text(
-                      "${weather.location}",
-                      style: TextStyle(
-                        fontSize: 24,
-                      ),
-                    ),
-                  ),
+              child: Text(
+                "${weather.location}",
+                style: TextStyle(
+                  fontSize: 24,
                 ),
               ),
             ),
             ListTile(
-              title: Hero(
-                tag: "hero tag ${weather.location} main",
-                child: Material(
-                  color: Colors.transparent,
-                  child: Text(
-                    "${weather.main}",
-                    style: TextStyle(
-                      fontSize: 16,
-                    ),
-                  ),
+              title: Text(
+                "${weather.main}",
+                style: TextStyle(
+                  fontSize: 16,
                 ),
               ),
               leading: leadingMainWidget(weather),
@@ -112,16 +97,10 @@ class MState extends State with TickerProviderStateMixin {
             ),
             detailWidget(
               AssetImage("images/temp.png"),
-              Hero(
-                tag: "hero tag ${weather.location} temp",
-                child: Material(
-                  color: Colors.transparent,
-                  child: Text(
-                    "${weather.temp.toInt()}°C",
-                    style: TextStyle(
-                      fontSize: 16,
-                    ),
-                  ),
+              Text(
+                "${weather.temp.toInt() - 273}°C",
+                style: TextStyle(
+                  fontSize: 16,
                 ),
               ),
             ),
